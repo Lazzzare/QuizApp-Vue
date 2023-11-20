@@ -8,7 +8,7 @@ const search = ref("");
 
 watch(search, () => {
   quizes.value = q.filter((quiz) =>
-    quiz.name.toLowerCase().includes(search.value.toLowerCase)
+    quiz.name.toLowerCase().includes(search.value.toLowerCase())
   );
 });
 </script>
